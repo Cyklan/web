@@ -1,0 +1,73 @@
+:root {
+  --black: #010101;
+  --background: #b3cdff;
+  --red: #ef7d7d;
+  --green: #9aef7d;
+  --purple: #e5d8fa;
+  --white: #fff;
+  --side-padding: 10vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--black);
+  margin: 0;
+  padding: 0;
+  padding-top: 8rem;
+}
+
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  background-color: var(--red);
+  color: var(--black);
+  border: 3px solid var(--black);
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+button:after {
+  content: "";
+  position: absolute;
+  background-color: var(--black);
+  top: 8px;
+  left: 8px;
+  right: -8px;
+  bottom: -8px;
+  z-index: -100;
+  border-radius: 4px;
+  // display: none;
+}
+
+button:active {
+  top: 8px;
+  left: 8px;
+  pointer-events: none;
+}
+
+button:active:after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
