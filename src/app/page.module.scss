@@ -2,6 +2,7 @@
   max-width: 800px;
   position: relative;
   margin: 0 auto;
+  overflow: hidden;
 
   @media (min-width: 1240px) {
     max-width: 1200px;
