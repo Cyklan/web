@@ -16,7 +16,9 @@ export default function Home() {
               i&apos;m nils and I make cool shit <br /> for phones and the
               internet
               <div className={styles["rotate-wrapper"]}>
-                <button>Look at cool shit!</button>
+                <button onClick={() => navigator.vibrate(Infinity)}>
+                  Look at cool shit!
+                </button>
               </div>
             </span>
           </div>
